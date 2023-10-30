@@ -12,9 +12,15 @@ export default function ListItems({
   return (
     <a
       href={path}
-      className="p-4 inline-block relative text-left	w-full  focus:border-l-4 focus:border-orange-600 focus:text-orange-600 focus:bg-white"
+      className="p-4 inline-block relative text-left h-[60px]	w-full hover:bg-zinc-300 focus:border-l-4 focus:border-orange-600 focus:text-orange-600 focus:bg-white"
     >
-<Image src={icon} className="focus:text-orange-600 float-left mt-1 mr-4 " width={27} height={27} alt="fds" />
+      <Image
+        className="float-left  m-1"
+        src={icon}
+        alt=".."
+        width={20}
+        height={20}
+      />{" "}
       {title}
     </a>
   );

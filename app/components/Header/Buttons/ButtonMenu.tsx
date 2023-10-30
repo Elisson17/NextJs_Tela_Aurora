@@ -2,7 +2,8 @@
 import { FiMenu } from "react-icons/fi";
 import { PiChartBarDuotone } from "react-icons/pi";
 import { DiApple } from "react-icons/di";
-import dashboard from "./bar_chart"
+import dashboard from "./bar-chart.svg";
+
 //acima estão os icones
 
 import ListItems from "../ListItems/ListItems";
@@ -22,31 +23,19 @@ export default function ButtonMenu() {
         className={`${open ? "block" : "hidden"} mt-[67px] inset-y-0 left-0
        absolute z-40  h-full bg-neutral-200 w-[192px] animate-fade-right animate-duration-[250ms]    `}
       >
-        <div className=" flex flex-col ">
+        <div className=" flex flex-col">
           <ul className="m-0 p-0 overflow-hidden 	">
             <li className="">
-              <ListItems
-                title="Aqui teste"
-                icon={dashboard}
-                path="#"
-              ></ListItems>
+              <ListItems title="Aqui teste" icon={dashboard} path="#" />
             </li>
             <li>
-              <ListItems
-                title="Aqui teste"
-                icon={<PiChartBarDuotone />}
-                path="#2"
-              ></ListItems>
+              <ListItems title="Aqui teste" icon={dashboard} path="#2" />
             </li>
             <li>
-              <ListItems
-                title="Aqui teste"
-                icon={<PiChartBarDuotone />}
-                path="#3"
-              />
+              <ListItems title="Aqui teste" icon={dashboard} path="#3" />
             </li>
             <li>
-              <ListItems title="Aqui teste" icon={<DiApple />} path="#4" />
+              <ListItems title="Aqui teste" icon={dashboard} path="#4" />
             </li>
           </ul>
         </div>
