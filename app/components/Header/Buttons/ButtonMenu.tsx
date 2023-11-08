@@ -6,9 +6,10 @@ import dashboard from "./bar-chart.svg";
 
 //acima estão os icones
 
-import ListItems from "../ListItems/ListItems";
 
 import { useState } from "react";
+import  BeakerIcon  from "@heroicons/react/20/solid";
+import ListItem from "../../SideBar/ListItem";
 
 export default function ButtonMenu() {
   const [open, setOpen] = useState(false);
@@ -21,23 +22,10 @@ export default function ButtonMenu() {
 
       <nav
         className={`${open ? "block" : "hidden"} mt-[67px] inset-y-0 left-0
-       absolute z-40  h-full bg-neutral-200 w-[192px] animate-fade-right animate-duration-[250ms]    `}
+        z-40 fixed  h-full bg-neutral-200 w-[192px] animate-fade-right animate-duration-[250ms]    `}
       >
         <div className=" flex flex-col">
-          <ul className="m-0 p-0 overflow-hidden 	">
-            <li className="">
-              <ListItems title="Aqui teste" icon={dashboard} path="#" />
-            </li>
-            <li>
-              <ListItems title="Aqui teste" icon={dashboard} path="#2" />
-            </li>
-            <li>
-              <ListItems title="Aqui teste" icon={dashboard} path="#3" />
-            </li>
-            <li>
-              <ListItems title="Aqui teste" icon={dashboard} path="#4" />
-            </li>
-          </ul>
+         <ListItem />
         </div>
       </nav>
     </div>

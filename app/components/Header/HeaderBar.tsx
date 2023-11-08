@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import ButtonMenu from "./Buttons/ButtonMenu";
 import Filter_Input from "./filter_text/Filter_Input";
